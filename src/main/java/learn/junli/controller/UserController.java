@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "https://junlixiao.github.io")
 @RequestMapping("api/v1")
 public class UserController {
 
@@ -19,7 +20,6 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @CrossOrigin(origins = "https://junlixiao.github.io")
     @GetMapping("/users")
     public List<User> allUsers() {
         return userService.listAll();
