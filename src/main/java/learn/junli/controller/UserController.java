@@ -19,6 +19,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    @CrossOrigin(origins = "https://junlixiao.github.io/lazy-trip-front/")
     @GetMapping("/users")
     public List<User> allUsers() {
         return userService.listAll();

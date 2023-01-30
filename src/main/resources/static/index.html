@@ -6,15 +6,17 @@
 </head>
 <body>
     <h1>Hello, Spring Boot!</h1>
-    <p>This is an exercise project inspired by the book <i>Spring Start Here</i>.<br>
-        I am about to learn:
+    <p>練習透過 Spring Boot 開發 REST API 端點</p>
         <ul>
-            <li>Spring MVC</li>
-            <li>Spring web scopes</li>
-            <li>REST services</li>
-            <li>Data sources</li>
-            <li>Transactions</li>
+            <li>取得所有使用者：GET /api/v1/users</li>
+            <li>按 username 取得使用者：GET /api/v1/users/{username}</li>
+            <li>按 username 更新使用者：PUT /api/v1/users/{username}</li>
+            <li>按 username 刪除使用者：DELETE /api/v1/users/{username}</li>
+            <li>按 request body 內容新增使用者：POST /api/v1/users</li>
         </ul>
+    <br>
+    <p>
+      參考資源：<i>Spring Start Here</i>
     </p>
 </body>
 </html>
